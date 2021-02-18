@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Using the ruby version 2.6.2 (maybe will be necessary)
+```bash
+$ rvm use 2.6.2
+```
 
-Things you may want to cover:
+## Installing dependencies
+```bash
+$ bundle install
+```
 
-* Ruby version
+## Copying the application config file from the example
+```bash
+$ cp config/application.yml.example config/application.yml
+```
+* It would be like that:
 
-* System dependencies
+```yaml
+development:
+  GITHUB_HOST: 'https://api.github.com'
+  FRONTEND_CORS_ORIGIN: 'localhost:3001'
 
-* Configuration
+test:
+  GITHUB_HOST: 'https://api.github.com'
+  FRONTEND_CORS_ORIGIN: 'localhost:3001'
 
-* Database creation
+production:
+  GITHUB_HOST: 'https://api.github.com'
+  FRONTEND_CORS_ORIGIN: 'localhost:3001'
+```
 
-* Database initialization
+### Edit the config/application.yml to the correct host/port
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```yaml
+development:
+  GITHUB_HOST: 'https://api.github.com'       # The Github API Host
+  FRONTEND_CORS_ORIGIN: 'localhost:3001'      # The gh_users_react host origin to be allowed on the CORS policy
+```
