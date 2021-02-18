@@ -1,0 +1,11 @@
+development:
+  GITHUB_HOST: 'https://api.github.com'
+  FRONTEND_CORS_ORIGIN: 'localhost:3001'
+
+test:
+  GITHUB_HOST: 'https://api.github.com'
+  FRONTEND_CORS_ORIGIN: 'localhost:3001'
+
+production:
+  GITHUB_HOST: 'https://api.github.com'
+  FRONTEND_CORS_ORIGIN: 'localhost:3001'
